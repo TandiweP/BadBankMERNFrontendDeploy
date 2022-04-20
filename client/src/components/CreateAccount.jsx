@@ -1,7 +1,6 @@
-// import React, { useState, useEffect } from "react";
-// import { useNavigate, Link } from 'react-router-dom';
-import React, { useState } from "react";
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from "react";
+import { useNavigate, Link } from 'react-router-dom';
+
 import Card from './Card'
 
 
@@ -12,16 +11,16 @@ export default function CreateAccount(){
     const [name, setName]         = useState('');
     const [email, setEmail]       = useState('');
     const [password, setPassword] = useState('');
-//     const loggedIn = localStorage.getItem('email') != null;
-//     const navigate = useNavigate();
+    const loggedIn = localStorage.getItem('email') != null;
+    const navigate = useNavigate();
   
-//     useEffect(() => {
-//         if (loggedIn) 
-//           navigate("/");
-//         else {
-//           console.log("ready for newaccount")
-//         }
-//       })    
+    useEffect(() => {
+        if (loggedIn) 
+          navigate("/");
+        else {
+          console.log("ready for newaccount")
+        }
+      })    
     
 
     function validate(field){
@@ -53,13 +52,13 @@ export default function CreateAccount(){
       const url = `/account/create/${name}/${email}/${password}/`;
       (async () => {
         var res  = await fetch(url, {method: 'POST'});
-//         if (res.status === 200) {
+        if (res.status === 200) {
             var data = await res.json();    
             console.log(data);        
             setShow(false);       
-//         } else {
-//             alert('User already exsists.')
-//         }
+        } else {
+            alert('User already exsists.')
+        }
     })();
   }    
   
