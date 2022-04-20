@@ -12,7 +12,7 @@ export default function Login(props){
      function handleLogin(){
       if (!validate(email, 'email')) return;
       if (!validate(password, 'password')) return;
-      fetch(`/account/login/${email}/${password}`)
+      fetch(`${API_URI}/account/login/${email}/${password}`)
     .then(response => response.text())
     .then(text => {
         try {
