@@ -1,6 +1,6 @@
 import { React, useState } from "react";
 import Card from './Card'
-import {API-URI} from './componentgroup'
+import {API_URI} from './componentgroup'
 
 export default function Login(props){
     const [show, setShow]         = useState(true)
