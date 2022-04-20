@@ -49,7 +49,7 @@ export default function CreateAccount(){
       if (!validate(name,     'name'))     return;
       if (!validate(email,    'email'))    return;
       if (!passwordLength(password, 'password')) return;
-      const url = `/account/create/${name}/${email}/${password}/`;
+      const url = `${API_URI}/account/create/${name}/${email}/${password}/`;
       (async () => {
         var res  = await fetch(url, {method: 'POST'});
         if (res.status === 200) {
