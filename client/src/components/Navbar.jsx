@@ -25,7 +25,6 @@ class Navbar extends React.Component {
                             <li id="nav1" className="nav-item"> <Link className="nav-link" title="Make a deposit to your account" to="/Deposit/">Deposit</Link></li>
                             <li id="nav2" className="nav-item"> <Link className="nav-link" title="Withdraw funds from your account" to="/Withdraw/">Withdraw</Link></li>
                             <li id="nav3" className="nav-item" ><Link className="nav-link" title="View User Data" to="/Alldata/">AllData</Link></li> 
-                            
                             <li id="nav4" className="nav-item"><Link className="nav-link" title="Logout" to="/Logout">Logout</Link></li>
                             <li id="xtra" className="nav-item"><Link className="nav-link" title="Currency Converter" to="/Currency/">Currency Converter</Link></li>
                       
