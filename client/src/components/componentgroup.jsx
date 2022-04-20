@@ -18,3 +18,5 @@ export {
     Withdraw,
     AllData
 }
+
+export const API_URI = "https://billieporterfullstackbank.herokuapp.com";
