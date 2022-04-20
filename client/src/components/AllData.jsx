@@ -10,12 +10,14 @@ export default function AllData(){
     useEffect(() => {
         
         // fetch all accounts from API
-         fetch('${API_URI}/account/all')
+          const url = `${API_URI}/account/all`;
+          fetch(url)
             .then(response => response.json())
             .then(data => {
-                    console.log(data);
-                    setData(JSON.stringify(data));
+                console.log(data);
+                setData(JSON.stringify(data, null, 2));                
             });
+
     }, []);
 
 
