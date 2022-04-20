@@ -21,7 +21,7 @@ export default function Login(props){
             setShow(false);
             console.log('JSON:', data);
         } catch(err) {
-            props.setStatus(text)
+            setStatus(text)
             console.log('err:', text);
         }
     });
