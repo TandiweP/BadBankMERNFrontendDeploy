@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from 'react-router-dom';
+import {API_URI} from './componentgroup'
 import Card from './Card'
 
 export default function Deposit(){
@@ -21,7 +22,7 @@ export default function Deposit(){
   }, []);
 
     function getAccount() {
-      const url = `/account/find/${email}`;
+      const url = `${API_URI}/account/find/${email}`;
       (async () => {
         var res = await fetch(url);
         var data = await res.json();
@@ -50,7 +51,7 @@ export default function Deposit(){
     function handleDeposit() {
       if (!validNumber(deposit) || !validAmount(deposit))
         return;
-      const url = `/account/update/${email}/${deposit}`;
+      const url = `${API_URI}/account/update/${email}/${deposit}`;
         (async () => {
           var res = await fetch(url, { method: 'PUT' });
           var data = await res.json();
