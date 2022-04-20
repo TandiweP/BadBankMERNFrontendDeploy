@@ -1,4 +1,5 @@
-import { React, useState } from "react";
+import { React, useState, useEffect } from "react";
+import { Link, useNavigate } from 'react-router-dom';
 import Card from './Card'
 import {API_URI} from './componentgroup'
 
@@ -8,7 +9,18 @@ export default function Login(props){
     const [email, setEmail]       = useState('')
     const [password, setPassword] = useState('')
     
+    const loggedIn = localStorage.getItem('email') != null;
+  const navigate = useNavigate();
 
+  useEffect(() => {
+    if (loggedIn)
+      navigate("/");
+    else {
+      console.log("Please Create An Account or Login"
+    }
+
+  })
+    
      function handleLogin(){
       if (!validate(email, 'email')) return;
       if (!validate(password, 'password')) return;
