@@ -8,15 +8,14 @@ export default function Login(props){
     const [status, setStatus]     = useState('')
     const [email, setEmail]       = useState('')
     const [password, setPassword] = useState('')
-    
     const loggedIn = localStorage.getItem('email') != null;
-  const navigate = useNavigate();
+    const navigate = useNavigate();
 
   useEffect(() => {
     if (loggedIn)
       navigate("/");
     else {
-      console.log("Please Create An Account or Login"
+      console.log("Please Create An Account or Login");
     }
 
   })
