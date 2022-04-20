@@ -1,5 +1,7 @@
 import {useState, useEffect} from 'react'
 import Card from './Card'
+import {API_URI} from './componentgroup'
+
 export default function AllData(){
 
 
@@ -8,7 +10,7 @@ export default function AllData(){
     useEffect(() => {
         
         // fetch all accounts from API
-        fetch('/account/all')
+        fetch('${API_URI}/account/all')
             .then(response => response.json())
             .then(data => {
                 console.log(data);
