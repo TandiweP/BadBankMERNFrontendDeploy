@@ -23,19 +23,20 @@ export default function Login(props){
      function handleLogin(){
       if (!validate(email, 'email')) return;
       if (!validate(password, 'password')) return;
-      fetch(`${API_URI}/account/login/${email}/${password}`)
-    .then(response => response.text())
-    .then(text => {
-        try {
-            const data = JSON.parse(text);
-            setStatus('');
-            setShow(false);
-            console.log('JSON:', data);
-        } catch(err) {
-            setStatus(text)
-            console.log('err:', text);
-        }
-    });
+      const url = `${API_URI}/account/login/${email}/${password}`;
+       (async () => {
+      var res = await fetch(url, { method: 'POST' });
+      if (res.status === 200) {
+        var data = await res.json();
+        localStorage.setItem('email', email);
+        localStorage.setItem('userName', data.name);
+        props.handleLogin();  
+        setStatus('');
+        setShow(false);    
+      } else {
+          alert('User Credentials Do Not Match');
+      }
+    })();
   }
 
   function validate(field, label) {
