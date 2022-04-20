@@ -10,8 +10,7 @@ export default function AllData(){
     useEffect(() => {
         
         // fetch all accounts from API
-          const url = `${API_URI}/account/all`;
-          fetch(url)
+          fetch(`${API_URI}/account/all`)
             .then(response => response.json())
             .then(data => {
                 console.log(data);
