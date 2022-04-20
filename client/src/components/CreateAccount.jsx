@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react'
+import { Link, useNavigate } from 'react-router-dom';
 import Card from './Card'
 import {API_URI} from './componentgroup'
 
@@ -10,8 +10,17 @@ export default function CreateAccount(){
     const [name, setName]         = useState('');
     const [email, setEmail]       = useState('');
     const [password, setPassword] = useState('');
- 
-
+    const loggedIn = localStorage.getItem('email') != null;
+    const navigate = useNavigate();
+  
+    useEffect(() => {
+        if (loggedIn) 
+          navigate("/");
+        else {
+          console.log("ready for newaccount")
+        }
+      })    
+    
     function validate(field){
       
         if (!field) {
