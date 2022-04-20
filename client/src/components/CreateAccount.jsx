@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, Link } from 'react-router-dom';
 import Card from './Card'
-import {API-URI} from './componentgroup'
+import {API_URI} from './componentgroup'
 
 
 export default function CreateAccount(){
