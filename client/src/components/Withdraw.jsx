@@ -44,6 +44,7 @@ export default function Withdraw(){
     (async () => {
       var res = await fetch(url, { method: 'PUT' });
       var data = await res.json();
+      console.log(data)
     })();
     getAccount();
     setShow(false);
