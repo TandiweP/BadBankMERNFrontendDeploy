@@ -32,7 +32,7 @@ export default function CurrencyConverter () {
   return (
     <Card
           
-            bgcolor="primary"
+            bgcolor="secondary"
             txtcolor="white"
             header="International Exchange Rates"
             title="Compare currencies below"
