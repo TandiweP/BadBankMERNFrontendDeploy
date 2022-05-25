@@ -1,6 +1,7 @@
 body {
   margin: 0;
-  background-color: #D1D1D1;
+/*   background-color: #D1D1D1; */
+  background-image: url("https://unsplash.com/photos/R_Nhn9g5y34");
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
