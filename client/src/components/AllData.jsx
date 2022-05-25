@@ -23,7 +23,7 @@ export default function AllData(){
     return (
         <Card 
         id = "CardGroup"
-        bgcolor="primary"
+        bgcolor="secondary"
         header="AllData"
         body=
         {data}
