@@ -16,7 +16,7 @@ class Navbar extends React.Component {
    return (
           
           <nav className="navbar navbar-expand-lg navbar-dark" id="nav-main">
-              <Link to="/" className="navbar-brand">BadBank</Link>
+              <Link to="/" className="navbar-brand">Ubank International</Link>
                   <div className="collapse navbar-collapse" id="navbarNav">
                     {loggedIn ? (
                       <>
