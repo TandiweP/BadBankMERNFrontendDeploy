@@ -9,9 +9,8 @@ export default function Home() {
             id = "card-home"
             bgcolor="secondary"
             txtcolor="white"
-            header="Home"
-            title="Ubank International"
-            text= "Where safe travels begin"
+            header="Ubank International"
+            title= "Where safe travels begin"
             
             body={(<img src={bank} className="img-fluid" alt="money sprout"/>)}
         />
