@@ -58,7 +58,7 @@ export default function Withdraw(){
   return (
     <Card 
       id = "CardGroup"
-      bgcolor="primary"
+      bgcolor="secondary"
       header="Withdraw Funds"
       status={status}
       body={ show ? (  
