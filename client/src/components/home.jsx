@@ -10,7 +10,7 @@ export default function Home() {
             bgcolor="secondary"
             txtcolor="white"
             header="Ubank International"
-            title= "Where safe travels begin"
+            title= "Where secure travel begins"
             
             body={(<img src={bank} className="img-fluid" alt="money sprout"/>)}
         />
