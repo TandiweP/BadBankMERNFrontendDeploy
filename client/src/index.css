@@ -70,6 +70,9 @@ code {
 	background: rgba(0, 0, 0, 0.9);
 }
 
+.navbar-brand {
+	color: rgb(255, 123, 0);
+}	
 .nav-item {
   margin: auto;
 }
