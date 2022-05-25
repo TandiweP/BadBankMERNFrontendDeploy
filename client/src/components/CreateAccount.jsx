@@ -65,7 +65,7 @@ export default function CreateAccount(){
     return (
       <Card
         id = "CardGroup"
-        bgcolor="primary"
+        bgcolor="secondary"
         header="Create Account"
         status={status}
         body={show ? (  
