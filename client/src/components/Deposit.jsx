@@ -69,7 +69,7 @@ export default function Deposit(){
     return (
       <Card 
         id = "CardGroup"
-        bgcolor="primary"
+        bgcolor="secondary"
         header="Make A Deposit"
         status={status}
         body={ show ? (  
