@@ -7,11 +7,11 @@ export default function Home() {
     return (
         <Card
             id = "card-home"
-            bgcolor="primary"
+            bgcolor="secondary"
             txtcolor="white"
             header="Home"
-            title="Welcome to BadBank"
-            text= "Where Nothing Matters"
+            title="Ubank International"
+            text= "Where safe travels begin"
             
             body={(<img src={bank} className="img-fluid" alt="money sprout"/>)}
         />
