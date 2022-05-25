@@ -58,7 +58,7 @@ export default function Login(props){
   
     return (
       <Card
-        bgcolor="primary"
+        bgcolor="secondary"
         header="Login"
         status={status} 
         body={show ? (  
