@@ -88,7 +88,7 @@ code {
 
 .img-fluid {
   border-radius: 80px 80px 80px 80px;
-  filter: opacity(60%);
+/*   filter: opacity(60%); */
   width: 350px;
   height: 350px;
 }
