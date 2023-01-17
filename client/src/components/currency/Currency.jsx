@@ -13,7 +13,7 @@ export default function CurrencyConverter () {
   const getRate = (first, second) => {
     axios({
       method: "GET",
-      url: `https://free.currconv.com/api/v7/convert?q=${first}_${second}&compact=ultra&apiKey=df1ae4ee7c91d70ecb03`,
+      url: `https://free.currconv.com/api/v7/convert?q=${first}_${second}&compact=ultra&apiKey=b1735e4a56712fad7fc7`,
     })
     .then((response) => {
       console.log(response.data);
@@ -40,7 +40,7 @@ export default function CurrencyConverter () {
             
             body={ 
               <>
-              <h5>1 {first} = {rate[`${first}_${second}`]} {second}</h5>
+              <h5> {first} = {rate[`${first}_${second}`]} {second}</h5>
               <input 
               type="input"
                 
